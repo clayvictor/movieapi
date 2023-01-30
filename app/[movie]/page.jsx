@@ -22,6 +22,26 @@ export default async function MovieDetail({ params }) {
   const res = await data.json();
   return (
     <div>
+      <div className="flex mb-2 ">
+        {/* Arrorw back */}
+        <a className="border border-solid border-white flex w-20" href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+          Back
+        </a>
+      </div>
       <div>
         <h2 className="text-2xl">{res.title}</h2>
         <h2 className="text-lg">{res.release_date}</h2>
